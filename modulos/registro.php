@@ -1,6 +1,6 @@
 <?php
-// Incluir la conexión a la base de datos
-include '../modelo/conexion.php'; // Asegúrate de que la ruta sea correcta
+//  conexión a la base de datos
+include '../modelo/conexion.php'; 
 
 // Verificar si la conexión está establecida correctamente
 if (!$conexion) {
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validar que el rol esté seleccionado
     if (empty($rol_id)) {
-        echo "❌ Debes seleccionar un rol.";
+        echo " Debes seleccionar un rol.";
         exit();
     }
 
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: login.php"); // Asegúrate de que la ruta sea correcta
             exit(); // Asegurarse de que no se ejecute más código
         } else {
-            echo "❌ Error al registrar: " . $stmt->error;
+            echo " Error al registrar: " . $stmt->error;
         }
 
         // Cerrar la sentencia
