@@ -1,7 +1,7 @@
 <?php
-// modulos/contacto.php
 
-// Verificar si se puede incluir la conexión
+
+
 if (file_exists("../modelo/conexion.php")) {
     include("../modelo/conexion.php");
 } else {
