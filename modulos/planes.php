@@ -1,15 +1,15 @@
 <?php
-// Incluir el archivo de conexión
+
 include('../modelo/conexion.php');
 
-// Verificar que la conexión se ha establecido
+
 if (!$conexion) {
     die("Conexión no establecida.");
 } else {
     echo "Conexión exitosa.";
 }
 
-// Consultar información del plan
+
 $sql = "SELECT * FROM planes WHERE id = 1"; // Verifica que haya un plan con id = 1
 $result = $conexion->query($sql);
 
