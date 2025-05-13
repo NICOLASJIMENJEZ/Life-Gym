@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
 $host = 'localhost'; // Dirección del servidor de la base de datos
 $db = 'Life_Gym'; // Nombre de la base de datos
 $user = 'root'; // Usuario de la base de datos
-$pass = '903135Nicolas'; // Contraseña del usuario
+$pass = '903135Nicolas'; // Contraseña 
 
 // Intentar crear la conexión
 $conexion = new mysqli($host, $user, $pass, $db);
@@ -56,11 +56,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit(); // Asegúrate de que no se ejecute más código
         } else {
             // Si la contraseña no es correcta
-            $error_message = "❌ Contraseña incorrecta para el correo: " . htmlspecialchars($email);
+            $error_message = " Contraseña incorrecta para el correo: " . htmlspecialchars($email);
         }
     } else {
         // Si el correo no está registrado
-        $error_message = "❌ El correo no está registrado: " . htmlspecialchars($email);
+        $error_message = " El correo no está registrado: " . htmlspecialchars($email);
     }
 
     // Cerrar la conexión y la sentencia
