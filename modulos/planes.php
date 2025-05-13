@@ -10,7 +10,7 @@ if (!$conexion) {
 }
 
 
-$sql = "SELECT * FROM planes WHERE id = 1"; // Verifica que haya un plan con id = 1
+$sql = "SELECT * FROM planes WHERE id = 1"; 
 $result = $conexion->query($sql);
 
 // Verifica si se encontraron resultados
@@ -24,7 +24,7 @@ if ($result) {
     die("Error en la consulta: " . $conexion->error);
 }
 
-$conexion->close(); // Asegúrate de usar la misma variable
+$conexion->close(); 
 ?>
 
 
